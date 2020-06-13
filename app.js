@@ -39,7 +39,7 @@ function submitNumber(e) {
         warning.classList.add('warning');
         game.appendChild(warning);
         let p = document.createElement('p');
-        p.textContent = 'let your number be between 0 and 20, not higher not lower. kapeesh??';
+        p.textContent = 'let your guess be between 0 and 20, not higher not lower. kapeesh??';
         warning.appendChild(p);
 
         setTimeout(() => {

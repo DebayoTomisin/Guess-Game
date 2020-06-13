@@ -2,7 +2,7 @@
 *::before,
 *::after{
     font-size: 10px;
-    font-family: cursive;
+    font-family: sans-serif, Arial, Helvetica;
     box-sizing: inherit;
 }
 
@@ -209,7 +209,6 @@ footer{
 
     .warning{
         padding: 1.3rem;
-        margin: -3rem 0;
     }
 
     footer{

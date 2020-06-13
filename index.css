@@ -1,0 +1,409 @@
+*,
+*::before,
+*::after{
+    font-size: 10px;
+    font-family: cursive;
+    box-sizing: inherit;
+}
+
+html{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{   
+    overflow: hidden;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+}
+
+.title-heading{
+    max-height: 20vh;
+    display: flex;
+    flex-direction: column;
+    padding: 0 1rem;
+    border-radius: .7rem;
+    background: #d7d4ed;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.title-heading h3{
+    font-size: 1.2rem;
+}
+
+.title-heading h1{
+    font-size: 2rem;
+    margin-top: -1rem;
+}
+
+.game-container{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 1rem auto;
+    background-color: #867cce;
+    border-radius: .5rem;
+    color: #fafafa;
+}
+
+.game-instructions{
+    display: flex;
+    justify-content: center;
+}
+
+.game-instructions p{
+    font-size: 1.5rem;
+    padding: 2rem;
+}
+
+.game{
+    margin-top: -4.5rem;
+    padding: 2rem;    
+}
+
+.game label{
+    font-size: 1.3rem;
+}
+
+.game .input{
+   width: 5rem;
+   height: 3rem;
+   text-align: center;
+   color: rgb(3, 8, 17);
+   font-size: 1.2rem;
+}
+
+.game button{
+    margin-top:  -1rem;
+    width: 5rem;
+    border-radius: .5rem;
+    background-color: #03020a;
+    color: #fafafa;
+}
+
+.game-results p{
+    font-size: 1.2rem;
+}
+
+.game-results p + p{
+    margin-top: .5rem;
+}
+
+.warning{
+    padding: 2rem;
+}
+
+.reload{
+    padding: 2rem;
+}
+
+.reload button{
+    padding: .5rem;
+    border-radius: .5rem;
+    background-color: #03020a;
+    color: #fafafa;
+}
+
+footer{
+    padding: .7rem 0;
+    margin-bottom: .5rem;
+    background-color:#d7d4ed;
+    text-align: center;
+    color: rgba(0, 0, 0, .7); 
+    border-radius: .5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (min-width: 300px){
+
+    body{
+        height: 100vh;
+        overflow: auto;
+    }
+    
+    .title-heading{
+        max-height: 12vh;
+        display: flex;
+        flex-direction: column;
+        padding: 0 .8rem;
+        border-radius: .7rem;
+        background: #d7d4ed;
+        color: rgba(0, 0, 0, 0.7);
+    }
+
+    .title-heading h3{
+        font-size: 1rem;
+    }
+    
+    .title-heading h1{
+        font-size: 1.5rem;
+        margin-top: -1rem;
+    }
+    
+    .game-container{
+        display: flex;
+        flex-direction: column;
+        height: 80vh;
+        margin-top: 1rem;
+        margin-bottom: -1rem;
+        background-color: #867cce;
+        border-radius: .5rem;
+        color: #fafafa;
+    }
+
+    .game-instructions p{
+        font-size: 1.2rem;
+        padding: 1.3rem;
+        line-height: 1.5;
+    }
+
+    .game{
+        margin-top: -4rem;
+        padding: 1.3rem;    
+    }
+    
+    .game label{
+        font-size: 1.2rem;
+    }
+    
+    .game .input{
+       width: 4rem;
+       height: 2rem;
+       text-align: center;
+       color: rgb(3, 8, 17);
+       font-size: 1.2rem;
+    }
+    
+    .game button{
+        margin-top:  -1rem;
+        width: 5rem;
+        border-radius: .5rem;
+        background-color: #03020a;
+        color: #fafafa;
+    }
+    
+    .game-results p{
+        font-size: 1rem;
+    }
+    .game-results p + p{
+        margin-top: .5rem;
+    }
+    
+    .reload{
+        padding: 1.3rem;
+        margin: -3rem 0;
+    }
+    
+    .reload button{
+        padding: .5rem;
+        border-radius: .5rem;
+        background-color: #03020a;
+        color: #fafafa;
+    }
+
+    .warning{
+        padding: 1.3rem;
+        margin: -3rem 0;
+    }
+
+    footer{
+        padding: .7rem 0;
+        margin-top: 2rem;
+        max-height: 20vh;
+        background-color:#d7d4ed;
+        text-align: center;
+        color: rgba(0, 0, 0, .7); 
+        border-radius: .5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+
+
+@media screen and (min-width: 700px) {
+
+    body{
+        background-color: #eee;
+    }
+
+    .container{
+        display: flex;
+    }
+        
+    .title-heading{
+        display: flex;
+        padding: 1.5rem 1.5rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .title-heading h3{
+        font-size: 2em;
+    }
+
+    .title-heading h1{
+        font-size: 4rem;
+        margin-top: -3rem;
+    }
+
+    .game-instructions p{
+        font-size: 2.3rem;
+        margin-top: -1rem;
+    }
+
+    .game label{
+        font-size: 2.3rem;
+    }
+
+    .game .input{
+        width: 8rem;
+        height: 4rem;
+        font-size: 2rem;
+    }
+
+    .game button{
+        width: 10rem;
+        font-size: 2rem;
+    }
+
+    .game-results p{
+        font-size: 2rem;
+    }
+
+    .warning p{
+        font-size: 2rem;
+    }
+
+    .reload p{
+        font-size: 2rem;
+    }
+    
+    .reload button{
+        width: 8rem;
+        height: 4rem;
+        font-size: 1.4rem;
+    }
+
+    footer{
+        margin-bottom: .5rem;
+    }
+
+    footer p{
+        font-size: 2rem;
+    }
+}
+
+@media screen and (min-width: 900px){
+    
+    .game-container{
+        height: 90vh;
+    }
+
+    .game-instructions p{
+        font-size: 3.3rem;
+    }
+
+    .game label{
+        font-size: 3rem;
+    }
+    
+    .game .input{
+        width: 12rem;
+        height: 6rem;
+        font-size: 2.5rem;
+    }
+    
+    .game button{
+        width: 12rem;
+        height: 6rem;
+    }
+
+    .game-results p{
+        font-size: 3rem;
+    }
+
+    .reload p {
+        font-size: 3rem;
+    }
+
+    .reload button{
+        width: 12rem;
+        height: 6rem;
+        font-size: 2rem;
+        border-radius: 1rem;
+    }
+
+    .warning p{
+        font-size: 3rem;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .game-container{
+        height: 90vh;
+    }
+    .title-heading h3{
+        font-size: 2em;
+    }
+
+    .title-heading h1{
+        font-size: 4rem;
+        margin-top: -3rem;
+    }
+
+    .game-instructions p{
+        font-size: 2.3rem;
+        margin-top: -1rem;
+    }
+
+    .game label{
+        font-size: 2.3rem;
+    }
+
+    .game .input{
+        width: 8rem;
+        height: 4rem;
+        font-size: 2rem;
+    }
+
+    .game button{
+        width: 8rem;
+        border-radius: 1rem;
+        height: 4rem;
+        font-size: 2rem;
+    }
+
+    .game-results p{
+        font-size: 2rem;
+    }
+
+    .warning p{
+        font-size: 2rem;
+    }
+
+    .reload p{
+        font-size: 2rem;
+    }
+    
+    .reload button{
+        width: 8rem;
+        height: 4rem;
+        font-size: 1.4rem;
+    }
+
+    footer{
+        margin-bottom: .5rem;
+    }
+
+    footer p{
+        font-size: 2rem;
+    }
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Guess Game!</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="title-heading">
+            <h3>Welcome to the math</h3>
+            <h1>GUESS GAME!</h1>
+        </div>
+
+        <div class="game-container">
+
+            <div class="game-instructions">
+                <p>The instructions are simple.
+                    <br> You Guess a number between 0 and 20 with 6 trials.
+                    <br> Guess the number before you run out of options and you win, don't, and you lose!
+                    <br>May the force be with you folks!</p>
+            </div>
+
+            <div class="game">
+                <p>
+                    <label for="guess">Enter a Guess:</label>
+                    <input class="input" id="input" type="number" max="20" min="0">
+                </p>
+                <button id="submit" type="button">Guess</button>
+
+                <div class="game-results" id="game-results"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <footer>
+        <p>&copy 2020 Guess Game: All rights reserved</p>
+    </footer>
+    <script src="app.js"></script>
+</body>
+
+</html>
